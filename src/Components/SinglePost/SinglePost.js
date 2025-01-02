@@ -71,7 +71,7 @@ const post = {
             <Link to="/posts" className="text-blue-600 hover:underline">Blogs</Link>
           </li>
           <span className="mx-2">/</span>
-          <li className="text-gray-700">Single Post</li>
+          <li className="text-gray-700">{title}</li>
         </ol>
       </nav>
 

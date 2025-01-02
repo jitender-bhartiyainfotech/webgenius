@@ -7,6 +7,8 @@ import Blog from './Components/Blogs/Blog.js';
 import SinglePost from './Components/SinglePost/SinglePost.js';
 import SingleCategory from './Components/Blogs/SingleCategory.js';
 import Categories from './Components/Blogs/Categories.js';
+import About from './Components/Pages/About.js';
+import Contact from './Components/Pages/Contact.js';
 
 
 function App() {
@@ -18,6 +20,10 @@ function App() {
         <Route path="/posts/:id" element={<SinglePost />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/category/:id" element={<SingleCategory />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
+
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
     </Router>

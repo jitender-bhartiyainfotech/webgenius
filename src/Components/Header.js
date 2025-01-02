@@ -15,8 +15,8 @@ function Header() {
       </Link>
       <nav className="hidden sm:flex justify-between items-center gap-4 font-semibold">
         <Link className="hover:text-gray-500 text-xl" to="/"> Home</Link>
-        <Link className="hover:text-gray-500 text-xl" to="/"> About</Link>
-        <Link className="hover:text-gray-500 text-xl" to="/"> Contact</Link>
+        <Link className="hover:text-gray-500 text-xl" to="/about"> About</Link>
+        <Link className="hover:text-gray-500 text-xl" to="/contact"> Contact</Link>
         <Link className="hover:text-gray-500 text-xl" to="/posts"> Blogs</Link>
       </nav>
       <nav className="sm:hidden flex flex-col items-end gap-1 font-semibold">
@@ -29,8 +29,8 @@ function Header() {
         {showMenu && (
           <>
             <Link className="hover:text-gray-500" to="/"> Home</Link>
-            <Link className="hover:text-gray-500" to="/"> About</Link>
-            <Link className="hover:text-gray-500" to="/"> Contact</Link>
+            <Link className="hover:text-gray-500" to="/about"> About</Link>
+            <Link className="hover:text-gray-500" to="/contact"> Contact</Link>
             <Link className="hover:text-gray-500" to="/posts"> Blogs</Link>
           </>
         )}

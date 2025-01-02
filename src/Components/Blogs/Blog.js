@@ -36,10 +36,7 @@ function Blog() {
                         <li>
                         <Link to="/" className="text-blue-600 hover:underline">Home</Link>
                         </li>
-                        <span className="mx-2">/</span>
-                        <li>
-                        <Link to="/posts" className="text-blue-600 hover:underline">Blogs</Link>
-                        </li>
+                        <span className="mx-2">/ Blogs</span>
                     </ol>
                 </nav>
                 <div className="md:grid grid-cols-3 gap-4 ">
