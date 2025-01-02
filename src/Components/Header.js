@@ -17,7 +17,8 @@ function Header() {
         <Link className="hover:text-gray-500 text-xl" to="/"> Home</Link>
         <Link className="hover:text-gray-500 text-xl" to="/about"> About</Link>
         <Link className="hover:text-gray-500 text-xl" to="/contact"> Contact</Link>
-        <Link className="hover:text-gray-500 text-xl" to="/posts"> Blogs</Link>
+        <Link className="hover:text-gray-500 text-xl" to="/posts"> Blog</Link>
+        <Link className="hover:text-gray-500 text-xl" to="/categories"> Categories</Link>
       </nav>
       <nav className="sm:hidden flex flex-col items-end gap-1 font-semibold">
         <button
@@ -31,7 +32,8 @@ function Header() {
             <Link className="hover:text-gray-500" to="/"> Home</Link>
             <Link className="hover:text-gray-500" to="/about"> About</Link>
             <Link className="hover:text-gray-500" to="/contact"> Contact</Link>
-            <Link className="hover:text-gray-500" to="/posts"> Blogs</Link>
+            <Link className="hover:text-gray-500" to="/posts"> Blog</Link>
+            <Link className="hover:text-gray-500" to="/categories"> Categories</Link>
           </>
         )}
       </nav>

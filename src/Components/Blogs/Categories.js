@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Header from '../Header'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
+import { FaArrowRight } from "react-icons/fa6";
+
 
 function Categories() {
 
@@ -31,22 +33,25 @@ function Categories() {
             <div class="md:grid grid-cols-3 gap-4 ">
                 {cats.map((catt) => {
                     return (
-                        <div class="bg-gray-200 p-4 text-center shadow-xl border my-3 my-10">
-                            <img src="https://webgeniusitsolutions.com/wp-content/uploads/2024/11/Content-marketing.jpg" alt="18227" />
-                            <a href="/posts/18223" data-discover="true">
+                        <Link to={`/category/${catt.id}`}>
+                            <div class="bg-gray-200 p-4 text-center shadow-xl border my-3 my-10">
+                                {catt.featured_image && <img src={catt.featured_image} alt={catt.name} />}
+                            
+                            
                                 <h3 class="text-4l font-extrabold text-left dark:text-white">
-                                    {catt.name}
+                                    {catt.name} -- ( {catt.count} )
                                 </h3>
-                            </a>
+                            
                             <p class="text-left">
                                 {catt.description}
                             </p>
                             <div class="text-left my-4">
-                                <a class="bg-black text-white  py-2 px-4 rounded hover:bg-slate-50 hover:text-black transition " href="/posts/18223" data-discover="true">
-                                    Read More
-                                </a>
+                            <FaArrowRight />
+                                {/* <Link to={`/category/${catt.id}`}><FaArrowRight /></Link> */}
                             </div>
                         </div>
+                        </Link>
+                        
                     )
                 })}
                 
