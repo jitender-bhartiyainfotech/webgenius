@@ -28,7 +28,20 @@ function SingleCategory() {
             <Header />
             
             <div className='container mx-auto px-4 py-8'>
-                <h2 className='text-3xl md:text-3xl font-bold text-left'>Category : { catName }</h2>
+                {/* <h2 className='text-3xl md:text-3xl font-bold text-left'>Category : { catName }</h2> */}
+                <nav className="text-sm mb-6">
+                    <ol className="list-reset flex text-gray-500">
+                        <li>
+                        <Link to="/" className="text-blue-600 hover:underline">Home</Link>
+                        </li>
+                        <span className="mx-2">/</span>
+                        <li>
+                        <Link to="/categories" className="text-blue-600 hover:underline">Categories</Link>
+                        </li>
+                        <span className="mx-2">/ { catName }</span>
+                        
+                    </ol>
+                </nav>
 
                 <div className="container mx-auto p-4">
                     <div className="md:grid grid-cols-3 gap-4 ">

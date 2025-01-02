@@ -6,6 +6,7 @@ import Home from './Components/Home/Home.js'
 import Blog from './Components/Blogs/Blog.js';
 import SinglePost from './Components/SinglePost/SinglePost.js';
 import SingleCategory from './Components/Blogs/SingleCategory.js';
+import Categories from './Components/Blogs/Categories.js';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/posts" element={<Blog />} />
         <Route path="/posts/:id" element={<SinglePost />} />
+        <Route path="/categories" element={<Categories />} />
         <Route path="/category/:id" element={<SingleCategory />} />
         {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>

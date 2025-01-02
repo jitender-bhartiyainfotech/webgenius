@@ -27,9 +27,21 @@ function Blog() {
             {/* {console.log(posts)} */}
             <Header />
             
-            <h2 className='text-3xl md:text-3xl font-bold text-center'>Blogs</h2>
+            {/* Breadcrumb */}
+            
 
             <div className="container mx-auto p-4">
+                <nav className="text-sm mb-6">
+                    <ol className="list-reset flex text-gray-500">
+                        <li>
+                        <Link to="/" className="text-blue-600 hover:underline">Home</Link>
+                        </li>
+                        <span className="mx-2">/</span>
+                        <li>
+                        <Link to="/posts" className="text-blue-600 hover:underline">Blogs</Link>
+                        </li>
+                    </ol>
+                </nav>
                 <div className="md:grid grid-cols-3 gap-4 ">
                 {posts.map((pst) => {
                     return (
